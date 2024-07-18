@@ -19,10 +19,10 @@ const Header = () => {
                 |
             </div>
             <div id='social-media-links' className='pr-10 -space-x-2'>
-                <SocialIcon bgColor='transparent' network='youtube' style={{ width: '60px', height: '56px', opacity: 0.8 }} className='sm-icon' />
-                <SocialIcon bgColor='transparent' network='linkedin' style={{ width: '60px', height: '56px', opacity: 0.8 }} className='sm-icon' />
+                <SocialIcon bgColor='transparent' network='youtube' href='https://www.youtube.com/@ashishmahawal' style={{ width: '60px', height: '56px', opacity: 0.8 }} className='sm-icon' />
+                <SocialIcon bgColor='transparent' network='linkedin' href='https://www.linkedin.com/in/ashishmahawal/' style={{ width: '60px', height: '56px', opacity: 0.8 }} className='sm-icon' />
                 <SocialIcon bgColor='transparent' network='x' style={{ width: '60px', height: '40px', opacity: 0.8 }} className='sm-icon' />
-                <SocialIcon bgColor='transparent' network='github' style={{ width: '60px', height: '46px', opacity: 0.8 }} className='sm-icon' />
+                <SocialIcon bgColor='transparent' network='github' href='https://github.com/ashishmahawal' style={{ width: '60px', height: '46px', opacity: 0.8 }} className='sm-icon' />
             </div>
 
 
