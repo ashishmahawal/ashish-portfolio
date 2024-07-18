@@ -1,0 +1,85 @@
+/* app/styles/globals.css */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1a1a20; /* Dark blueish color */
+  color: #ffffff; /* Optional: set text color to white for better contrast */
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.social-icon {
+  @apply w-8 h-8; /* Default size */
+}
+
+.social-icon:hover {
+  @apply text-yellow-400; /* Change to desired hover color */
+}
+
+.social-icon svg {
+  fill: currentColor; /* Make the SVG fill use the text color */
+}
+.sm-icon {
+  @apply -mt-3;
+}
+
+.sm-icon:hover {
+  @apply scale-125 transition duration-500 ease-in-out;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    box-shadow: 0 0 25px 5px rgba(252, 211, 77, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 50px 10px rgba(252, 211, 77, 1);
+  }
+}
+
+@keyframes breathe-lg {
+  0%,
+  100% {
+    box-shadow: 0 0 25px 10px rgba(252, 211, 77, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 50px 20px rgba(252, 211, 77, 1);
+  }
+}
+
+.breathing-shadow {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.breathing-shadow-lg {
+  animation: breathe-lg 3s ease-in-out infinite;
+}
+
+.button-yt {
+  @apply px-11 py-4 text-2xl rounded-2xl shadow-2xl shadow-yellow-400 text-white font-semibold mt-16;
+}
+
+.image-container {
+  width: 100%; /* Adjust the width as needed */
+  overflow: hidden;
+  border-radius: 60%; /* Makes the image rounded */
+}
+
+.rounded-image {
+  width: 100%;
+  height: 32rem;
+  object-fit: cover;
+  object-position: top; /* Align the top of the image */
+  transform: scaleY(2); /* Adjust the scale to crop the bottom 40% */
+  transform: scaleX(1.1);
+}
