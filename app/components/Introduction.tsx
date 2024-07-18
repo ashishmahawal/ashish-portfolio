@@ -14,7 +14,7 @@ const Introduction = () => {
 
                 </div>
                 <p className='text-4xl font-mono mt-4'>
-                    I'm Ashish Mahawal
+                    I&apos;m Ashish Mahawal
                 </p>
                 <p className='text-yellow-50 text-opacity-50'>
                     Fullstack Developer & Instructor
