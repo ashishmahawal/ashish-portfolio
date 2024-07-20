@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Introduction = () => {
     return (
-        <div className="flex flex-row font-mono pl-10 items-center justify-center my-20 ">
+        <div className="flex flex-col sm:flex-row font-mono pl-10 items-center justify-center my-20 ">
             <div className="brief-intro">
                 <div className="flex-col mt-42 " id='intro-hello'>
                     <div className="flex  mx-auto text-yellow-400 text-3xl space-x-4">
@@ -19,7 +19,7 @@ const Introduction = () => {
                 <p className='text-yellow-50 text-opacity-50'>
                     Fullstack Developer & Instructor
                 </p>
-                <p className='text-yellow-50 text-opacity-70  text-justify pr-56'>
+                <p className='text-yellow-50 text-opacity-70  sm:text-justify lg:pr-56 md:pr-0 pr-12'>
                     Hi there! My name is Ashish Mahawal and I’m a software engineer
                     with over 5 years of experience in the industry. I love all things tech and coding, and on my channel, I share my knowledge and experience with others.
                 </p>
@@ -36,7 +36,7 @@ const Introduction = () => {
                 </button>
             </div>
 
-            <div className=" flex flex-col big-photo mr-74  w-[80%] scale-150 px-20 pt-52 mt-32 ">
+            <div className="hidden md:flex md:flex-col big-photo lg:mr-74 md:px-14  lg:w-[80%] lg:scale-150 lg:px-20 pt-52 mt-32 lg:ml-0 ml-10 ">
                 <img src='./ashish_nobg.jpg' alt="Ashish Photo" className='mb-10 mr-36 transform -translate-y-36 scale-125' />
                 <div className=' mr-52 w-[65%]  breathing-shadow-lg -mt-32' ></div>
             </div>
